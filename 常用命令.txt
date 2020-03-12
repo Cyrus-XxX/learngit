@@ -2,8 +2,7 @@ git add <fileName> 添加修改文件到暂存区
 git commit -m "" 提交修改文件
 git log / git log --pretty=oneline 查看提交历史
 git status 查看有过修改的文件状态
-git reset --hard HEAD^ 版本回退
-git reset --hard HEAD~20
-git reset --hard 39393（commit_id）
+git reset --hard HEAD^ / git reset --hard HEAD~20 / git reset --hard 39393（commit_id） 版本回退
 git reflog 查看执行的提交和回退命令
 git diff <fileName> 查看修改内容
+git checkout -- <fileName> 从Git检出文件到工作区，暂存区有文件从暂存区检出，否则从版本库检出
